@@ -1,8 +1,8 @@
+name: Build ImmortalWrt
 on:
   schedule:
     - cron: "0 0 * * *"
   workflow_dispatch:  # This line enables the manual trigger
-
 
 jobs:
   build_immortalwrt_daily:
