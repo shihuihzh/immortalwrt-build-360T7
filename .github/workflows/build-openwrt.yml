@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Set up ImmortalWrt build environment
         run: |
@@ -28,7 +28,7 @@ jobs:
           make -j$(nproc)
 
       - name: Upload firmware
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: immortalwrt-firmware
           path: immortalwrt/bin/targets/
