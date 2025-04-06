@@ -27,8 +27,8 @@ jobs:
           ./scripts/feeds install -a
           make -j$(nproc)
 
-      - name: Upload firmware
-        uses: actions/upload-artifact@v3
-        with:
-          name: immortalwrt-firmware
-          path: immortalwrt/bin/targets/
+      # - name: Upload firmware
+      #   uses: actions/upload-artifact@v3
+      #   with:
+      #     name: immortalwrt-firmware
+      #     path: immortalwrt/bin/targets/
