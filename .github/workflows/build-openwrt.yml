@@ -1,7 +1,7 @@
 name: Build ImmortalWrt
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "30 2 * * 1"
   workflow_dispatch:  # This line enables the manual trigger
 
 jobs:
@@ -31,5 +31,5 @@ jobs:
         uses:  actions/upload-artifact@v4
         id: artifact-upload-step
         with:
-          name: immortalwrt-firmware
+          name: immortalwrt-firmware-360t7
           path: immortalwrt/bin/targets/
